@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { HeaderbarComponent } from './layout/headerbar/headerbar.component';
-import { FooterbarComponent } from './layout/footerbar/footerbar.component';
+import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
+import { HeaderbarComponent } from './shared/layout/headerbar/headerbar.component';
+import { FooterbarComponent } from './shared/layout/footerbar/footerbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterbarComponent } from './layout/footerbar/footerbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
