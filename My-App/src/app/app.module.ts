@@ -7,18 +7,23 @@ import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
 import { HeaderbarComponent } from './shared/layout/headerbar/headerbar.component';
 import { FooterbarComponent } from './shared/layout/footerbar/footerbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MaterialModules } from './shared/Materials/app.materials.module';
+import { DashboardsComponent } from './roots/dashboards/dashboards.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HeaderbarComponent,
-    FooterbarComponent
+    FooterbarComponent,
+    DashboardsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModules,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
